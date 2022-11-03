@@ -1,0 +1,12 @@
+{{ include('header.twig') }}
+<!-- page content -->
+            <div class="container w-auto ml-8 mr-8 md:mx-auto border px-2 py-2 rounded-md">
+                <div class="w-auto">
+                    <h1 class="text-2xl mb-2">Willkommen {{ vorname }} {{ name }}!</h1>
+                    <p>Vorname und Name sind Variablen, die an das Twig-Template übergeben werden.<br />
+                    Ausserdem ist der Seitenname im HTML-Titel variabel, je nachdem welche Seite angezeigt wird.
+                    </p>
+                </div>
+            </div>
+<!-- /page content -->
+{{ include ('footer.twig') }}

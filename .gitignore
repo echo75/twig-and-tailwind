@@ -1,0 +1,7 @@
+# ignore ALL .log files
+*.log
+php.ini
+
+# ignore ALL files in ANY directory named temp
+vendor/
+node_modules/

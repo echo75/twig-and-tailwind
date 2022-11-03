@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Twig Page - {{ pagetitel }}</title>
+        <link rel="stylesheet" href="./../assets/css/style.css">
+        <script defer src="https://unpkg.com/alpinejs@3.10.2/dist/cdn.min.js"></script>
+        <style>
+            [x-cloak] {
+                display: none !important;
+            }
+        </style>
+        <script>
+            document.addEventListener("alpine:init", () => {
+                Alpine.store("darkMode", {
+                    on: false,
+
+                    toggle() {
+                        this.on = !this.on;
+                    }
+                });
+            });
+        </script>
+    </head>
+    <body class="antialiased min-h-screen lg:flex" x-cloak x-data="{open: false}">
+        <nav
+            class="absolute inset-0 transform lg:transform-none lg:opacity-100 duration-200 lg:hidden z-10 w-80 bg-blue-500 text-white h-screen p-3"
+            :class="{'translate-x-0 ease-in opacity-100':open === true, '-translate-x-full ease-out opacity-0': open === false}"
+        >
+            <div>
+                <div class="flex justify-between mb-4">
+                    <span class="font-bold text-2xl sm:text-3xl m-2">Menü</span>
+                    <button class="p-2 focus:outline-none focus:bg-blue-800 hover:bg-blue-800 md:hidden rounded-md" @click="open = false">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+                        </svg>
+                    </button>
+                </div>
+                <a href="./home" class="block menuelink mb-2">Home</a>
+                <a href="./page1" class="block menuelink mb-2">Unterseite</a>
+                <a href="./contact" class="block menuelink mb-2">Kontakt</a>
+                <a href="./" class="block abmeldenlink mb-2">Abmelden</a>
+            </div>
+        </nav> 
+        <div class="relative z-0 lg:flex-grow"><!-- wrapper -->
+            <!-- sidebar -->
+            <div class="flex justify-between text-black py-4 px-8">
+                <div class="hidden md:flex flex-row items-center align-middle gap-4">
+                    <a href="./home" class="menuelink">Home</a>
+                    <a href="./page1" class="menuelink">Unterseite</a>
+                    <a href="./contact" class="menuelink">Kontakt</a>
+                    <a href="./" class="abmeldenlink">Abmelden</a>
+                </div>
+                <button class="md:hidden" @click="open = true">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+                <div class="text-lg font-bold">Homepage</div>
+            </div>
+            <!-- /sidebar -->

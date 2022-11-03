@@ -1,0 +1,27 @@
+{
+  "name": "tailwind-and-twig",
+  "version": "1.0.0",
+  "description": "This README would normally document whatever steps are necessary to get your application up and running.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx tailwindcss -i ./tailwind/tailwind.css -o ./assets/css/style.css -w",
+    "build": "cross-env NODE_ENV=production npx tailwindcss -i ./tailwind/tailwind.css -o ./assets/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/johan1975/twig.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://bitbucket.org/johan1975/twig/issues"
+  },
+  "homepage": "https://bitbucket.org/johan1975/twig#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.0.24"
+  },
+  "dependencies": {
+    "cross-env": "^7.0.3"
+  }
+}

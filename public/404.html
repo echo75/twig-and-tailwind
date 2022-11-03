@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <title>404 - Twig Seite</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+#wrappen {
+overflow-x: hidden;
+}
+
+#sidebar-wrapper {
+min-height: 100vh;
+margin-left: 0;
+transition: margin .24 ease-out;
+-webkit-transition: margin .24 ease-out;
+-moz-transition: margin .24 ease-out;
+-o-transition: margin .24 ease-out;
+}
+
+#sidebar-wrapper .sidebar-heading {
+padding: 0.875rem 1.25rem;
+font-size: 1.2rem;
+}
+
+#sidebar-wrapper .list-group {
+width: 15rem;
+}
+
+.page-content-wrapper {
+min-width: 0;
+width: 100%;
+padding: 3.5rem 0 0 1rem;
+background-color: white;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+margin-left: -15rem;
+}
+
+/* 404 Page Styles */
+body#fehlerseite, body#fehlerseite .page-content-wrapper {
+background-color: #faa;
+}
+
+body#fehlerseite h1 {
+color: red;
+}
+
+body#fehlerseite .page-content-wrapper a {
+color: #ff0000;
+}
+    </style>
+</head>
+
+<body id="fehlerseite">
+    <div class="d-flex" id="wrapper">
+        <!-- page content -->
+        <div class="page-content-wrapper">
+            <div class="container-fluid">
+                <h1>Fehler 404: Seite oder Datei nicht gefunden!</h1>
+                <p>Dies ist eine statische HTML-Seite. <a href="javascript:history.back();" target="_self">Zurück zur letzten Seite</a>.</p>
+            </div>
+        </div>
+        <!-- /page content -->
+    </div>
+</body>
+
+</html>

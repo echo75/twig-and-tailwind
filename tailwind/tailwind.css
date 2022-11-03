@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+/* Custom CSS Classes */
+.btn {
+  @apply px-4 py-2 bg-blue-600 text-white rounded;
+}
+.menuelink {
+  @apply bg-blue-300 hover:bg-blue-600 hover:text-gray-200 py-2 px-4 rounded-md;
+}
+.abmeldenlink {
+  @apply bg-red-300 hover:bg-red-600 hover:text-gray-200 py-2 px-4 rounded-md;
+}
+@tailwind utilities;
