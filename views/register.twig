@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Twig Page -
+			{{ pagetitel }}</title>
+
+		<link rel="stylesheet" href="./../../css/style.css">
+	</head>
+
+	<body class="min-h-screen bg-gradient-to-br from-gray-100 to-blue-200 flex items-center justify-center p-6">
+
+		<div class="w-full max-w-md bg-white rounded-2xl shadow-xl p-8">
+
+			<h1 class="text-3xl font-bold text-center text-gray-800 mb-2">
+				Willkommen
+			</h1>
+
+			<p class="text-center text-gray-500 mb-8">
+				Bitte gib deinen Vor- und Nachnamen ein.
+			</p>
+
+			<form action="./answer" method="post" class="space-y-4">
+
+				<div>
+					<label for="vorname" class="block text-sm font-medium text-gray-700 mb-1">
+						Vorname
+					</label>
+
+					<input type="text" id="vorname" name="vorname" placeholder="Max" class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+				</div>
+
+				<div>
+					<label for="name" class="block text-sm font-medium text-gray-700 mb-1">
+						Nachname
+					</label>
+
+					<input type="text" id="name" name="name" placeholder="Mustermann" class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+				</div>
+
+				<button type="submit" class="w-full bg-blue-600 text-white py-2 rounded-lg font-semibold hover:bg-blue-700 transition">
+					Weiter
+				</button>
+
+			</form>
+
+			<div class="mt-6 bg-gray-100 rounded-lg p-4 text-sm text-gray-600">
+				<strong>Hinweis:</strong><br>
+				Max Mustermann bleibt der Default-User, wenn keine Eingabe erfolgt.
+			</div>
+
+			<p class="text-center text-xs text-gray-400 mt-4">
+				Einfache Demo-Seite mit Twig und Tailwind CSS
+			</p>
+
+		</div>
+
+	</body>
+</html>

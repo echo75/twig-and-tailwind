@@ -1,0 +1,8 @@
+{
+    
+    "require": {
+        "twig/twig": "^2.13",
+        "altorouter/altorouter": "^2.0",
+        "paragonie/easydb": "^2.11"
+    }
+}
