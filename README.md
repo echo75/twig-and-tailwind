@@ -1,29 +1,17 @@
 # README #
 
-This README would normally document whatever steps are necessary to get your application up and running.
+A small Site that covers a lot of web technics
 
-### What is this repository for? ###
+### What does the app cover? ###
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+* Symfony components
+* MVC with AltoRouter
+* Twig Template Engine
+* Alpine.js
+* Tailwind CSS
+* Responsive Design
 
-### How do I get set up? ###
+### Where you can see the result: ###
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
-
-### Contribution guidelines ###
-
-* Writing tests
-* Code review
-* Other guidelines
-
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
+* https://hedman.de/webseiten/tailwind/
+  
