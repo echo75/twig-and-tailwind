@@ -4,7 +4,7 @@
     </IfModule>
 
     RewriteEngine On
-    RewriteBase /webseiten/tailwind
+    RewriteBase /public
 
     # Send Requests To Front Controller...
     RewriteCond %{REQUEST_FILENAME} !-f
